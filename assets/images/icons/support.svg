@@ -1,0 +1,20 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Headset shape -->
+  <path d="M16 6 C22 6 26 10 26 16 L26 20 L24 20 C22 20 22 18 22 18 L22 16 C22 12 19 10 16 10 C13 10 10 12 10 16 L10 18 C10 18 10 20 8 20 L6 20 L6 16 C6 10 10 6 16 6 Z" 
+        fill="#28a745" opacity="0.2" stroke="#28a745" stroke-width="2"/>
+  
+  <!-- Ear pieces -->
+  <rect x="4" y="16" width="4" height="6" rx="2" fill="#28a745"/>
+  <rect x="24" y="16" width="4" height="6" rx="2" fill="#28a745"/>
+  
+  <!-- Microphone -->
+  <rect x="14" y="22" width="4" height="6" rx="2" fill="none" stroke="#28a745" stroke-width="2"/>
+  <circle cx="16" cy="25" r="1" fill="#28a745"/>
+  
+  <!-- Sound waves -->
+  <path d="M20 14 C21 15 21 17 20 18" stroke="#0066cc" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M22 12 C24 14 24 18 22 20" stroke="#0066cc" stroke-width="1.5" fill="none" opacity="0.4"/>
+  
+  <path d="M12 14 C11 15 11 17 12 18" stroke="#0066cc" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M10 12 C8 14 8 18 10 20" stroke="#0066cc" stroke-width="1.5" fill="none" opacity="0.4"/>
+</svg>
