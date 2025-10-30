@@ -28,31 +28,48 @@ document.addEventListener('DOMContentLoaded', function() {
 // Mobile Menu
 function initMobileMenu() {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-    const navigation = document.querySelector('.navigation');
+    const navigation = document.querySelector('.mobile-navigation');
+    const overlay = document.querySelector('.mobile-menu-overlay');
     
-    if (mobileMenuToggle && navigation) {
-        mobileMenuToggle.addEventListener('click', function() {
-            this.classList.toggle('active');
-            navigation.classList.toggle('mobile-menu-open');
-            document.body.classList.toggle('menu-open');
+    if (mobileMenuToggle && navigation && overlay) {
+        function openMenu() {
+            mobileMenuToggle.classList.add('active');
+            navigation.classList.add('mobile-menu-open');
+            overlay.classList.add('active');
+            document.body.classList.add('menu-open');
+        }
+        
+        function closeMenu() {
+            mobileMenuToggle.classList.remove('active');
+            navigation.classList.remove('mobile-menu-open');
+            overlay.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+        
+        mobileMenuToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            if (navigation.classList.contains('mobile-menu-open')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
         });
         
-        // Close menu when clicking outside
+        // Close menu when clicking on overlay
+        overlay.addEventListener('click', closeMenu);
+        
+        // Close menu when clicking outside navigation
         document.addEventListener('click', function(e) {
             if (!navigation.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
-                mobileMenuToggle.classList.remove('active');
-                navigation.classList.remove('mobile-menu-open');
-                document.body.classList.remove('menu-open');
+                closeMenu();
             }
         });
         
         // Close menu when clicking on navigation links
-        const navLinks = document.querySelectorAll('.nav-link');
+        const navLinks = document.querySelectorAll('.mobile-nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
-                mobileMenuToggle.classList.remove('active');
-                navigation.classList.remove('mobile-menu-open');
-                document.body.classList.remove('menu-open');
+                closeMenu();
             });
         });
     }
