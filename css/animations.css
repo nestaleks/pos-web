@@ -144,27 +144,31 @@
 /* Hero Animations */
 .hero-title {
     opacity: 1;
-    animation: fadeInUp 0.8s ease-out 0.3s;
+    transform: translateY(0);
 }
 
 .hero-description {
-    opacity: 1;
-    animation: fadeInUp 0.8s ease-out 0.5s;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out 0.5s forwards;
 }
 
 .hero-actions {
-    opacity: 1;
-    animation: fadeInUp 0.8s ease-out 0.7s;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out 0.7s forwards;
 }
 
 .hero-features {
-    opacity: 1;
-    animation: fadeInUp 0.8s ease-out 0.9s;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out 0.9s forwards;
 }
 
 .hero-image {
-    opacity: 1;
-    animation: fadeInRight 0.8s ease-out 0.4s;
+    opacity: 0;
+    transform: translateX(30px);
+    animation: fadeInRight 0.8s ease-out 0.4s forwards;
 }
 
 .dashboard-img {
@@ -293,7 +297,7 @@
     border-right: 2px solid var(--primary-color);
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 3s steps(40, end), blink-cursor 0.5s step-end infinite alternate;
+    animation: typing 1.5s steps(30, end), blink-cursor 0.5s step-end infinite alternate;
 }
 
 @keyframes typing {

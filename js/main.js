@@ -235,7 +235,7 @@ function initTypingAnimation() {
     const heroTitle = document.querySelector('.hero-title');
     
     if (heroTitle) {
-        const text = heroTitle.textContent;
+        const text = heroTitle.textContent.trim();
         heroTitle.textContent = '';
         heroTitle.classList.add('typing-animation');
         
@@ -244,13 +244,14 @@ function initTypingAnimation() {
             if (index < text.length) {
                 heroTitle.textContent += text.charAt(index);
                 index++;
-                setTimeout(typeWriter, 50);
+                // Используем requestAnimationFrame для более плавной анимации
+                setTimeout(typeWriter, 25);
             } else {
                 heroTitle.classList.remove('typing-animation');
             }
         };
         
-        setTimeout(typeWriter, 1000);
+        setTimeout(typeWriter, 100);
     }
 }
 
