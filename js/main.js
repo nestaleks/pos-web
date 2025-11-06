@@ -23,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Typing animation for hero title
     initTypingAnimation();
+    
+    // Sticky call-to-action
+    initGlobalCTA();
 });
 
 // Mobile Menu
@@ -78,23 +81,31 @@ function initMobileMenu() {
 // Smooth Scrolling
 function initSmoothScrolling() {
     const links = document.querySelectorAll('a[href^="#"]');
+    if (!links.length) {
+        return;
+    }
     
     links.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
             const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                const headerHeight = document.querySelector('.header').offsetHeight;
-                const targetPosition = targetElement.offsetTop - headerHeight;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
+            if (!targetId || targetId === '#') {
+                return;
             }
+            
+            const targetElement = document.querySelector(targetId);
+            if (!targetElement) {
+                return;
+            }
+            
+            e.preventDefault();
+            const header = document.querySelector('.header');
+            const headerHeight = header ? header.offsetHeight : 0;
+            const targetPosition = targetElement.offsetTop - headerHeight;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
         });
     });
 }
@@ -102,6 +113,10 @@ function initSmoothScrolling() {
 // Scroll Animations
 function initScrollAnimations() {
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    
+    if (!animatedElements.length || !('IntersectionObserver' in window)) {
+        return;
+    }
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -138,55 +153,52 @@ function initScrollAnimations() {
 // Header Scroll Effect
 function initHeaderScrollEffect() {
     const header = document.querySelector('.header');
-    let lastScrollTop = 0;
+    if (!header) {
+        return;
+    }
     
     window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        if (scrollTop > 100) {
-            header.classList.add('header-scrolled');
-        } else {
-            header.classList.remove('header-scrolled');
-        }
-        
-        // Hide/show header on scroll
-        if (scrollTop > lastScrollTop && scrollTop > 200) {
-            header.style.transform = 'translateY(-100%)';
-        } else {
-            header.style.transform = 'translateY(0)';
-        }
-        
-        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        header.classList.toggle('header-scrolled', scrollTop > 100);
+        header.style.transform = 'translateY(0)';
     });
 }
 
 // Stats Counter Animation
 function initStatsCounter() {
-    const statNumbers = document.querySelectorAll('.stat-number');
+    const counters = document.querySelectorAll('.metric-value');
+    if (!counters.length || !('IntersectionObserver' in window)) {
+        return;
+    }
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const target = entry.target;
-                const finalNumber = target.textContent;
-                const duration = 2000; // 2 seconds
-                
-                animateCounter(target, finalNumber, duration);
-                observer.unobserve(target);
+            if (!entry.isIntersecting) {
+                return;
             }
+            
+            const target = entry.target;
+            animateCounter(target, target.dataset.target || target.textContent.trim(), 2000);
+            observer.unobserve(target);
         });
-    });
+    }, { threshold: 0.4 });
     
-    statNumbers.forEach(stat => {
-        observer.observe(stat);
+    counters.forEach(counter => {
+        counter.dataset.target = counter.textContent.trim();
+        observer.observe(counter);
     });
 }
 
 function animateCounter(element, finalValue, duration) {
-    const numericValue = parseInt(finalValue.replace(/[^\d]/g, ''));
-    const suffix = finalValue.replace(/[\d,]/g, '');
+    const numericValue = parseInt(finalValue.replace(/[^\d-]/g, ''), 10);
+    if (Number.isNaN(numericValue)) {
+        element.textContent = finalValue;
+        return;
+    }
+    
+    const suffix = finalValue.replace(/[\d,-]/g, '');
     let currentValue = 0;
-    const increment = numericValue / (duration / 16);
+    const increment = numericValue / Math.max(duration / 16, 1);
     
     const timer = setInterval(() => {
         currentValue += increment;
@@ -203,6 +215,9 @@ function animateCounter(element, finalValue, duration) {
 // Parallax Effects
 function initParallaxEffects() {
     const parallaxElements = document.querySelectorAll('.dashboard-img, .hero-image');
+    if (!parallaxElements.length) {
+        return;
+    }
     
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
@@ -219,21 +234,24 @@ function initParallaxEffects() {
 // Form Handling
 function initFormHandling() {
     const forms = document.querySelectorAll('form');
+    if (!forms.length) {
+        return;
+    }
     
     forms.forEach(form => {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
+            const submitBtn = form.querySelector('button[type=\"submit\"], .btn');
+            if (!submitBtn) {
+                return;
+            }
             
-            const submitBtn = form.querySelector('button[type="submit"], .btn');
-            const originalText = submitBtn.textContent;
-            
-            // Show loading state
-            submitBtn.innerHTML = '<span class="loading-spinner"></span> Отправка...';
+            const originalText = submitBtn.textContent.trim();
+            submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
             
-            // Simulate form submission
             setTimeout(() => {
-                submitBtn.textContent = '✓ Отправлено';
+                submitBtn.textContent = 'Sent';
                 submitBtn.classList.add('btn-success');
                 
                 setTimeout(() => {
@@ -246,29 +264,53 @@ function initFormHandling() {
         });
     });
 }
-
-// Typing Animation for Hero Title
+// Typing animation for hero title (skipped for long headlines)
 function initTypingAnimation() {
     const heroTitle = document.querySelector('.hero-title');
+    if (!heroTitle) {
+        return;
+    }
     
-    if (heroTitle) {
-        const text = heroTitle.textContent.trim();
-        heroTitle.textContent = '';
-        heroTitle.classList.add('typing-animation');
-        
-        let index = 0;
-        const typeWriter = () => {
-            if (index < text.length) {
-                heroTitle.textContent += text.charAt(index);
-                index++;
-                // Используем requestAnimationFrame для более плавной анимации
-                setTimeout(typeWriter, 25);
-            } else {
-                heroTitle.classList.remove('typing-animation');
-            }
-        };
-        
-        setTimeout(typeWriter, 100);
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const text = heroTitle.textContent.trim();
+    
+    if (prefersReducedMotion || text.length > 70) {
+        return;
+    }
+    
+    heroTitle.textContent = '';
+    heroTitle.classList.add('typing-animation');
+    
+    let index = 0;
+    const typeWriter = () => {
+        if (index < text.length) {
+            heroTitle.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 25);
+        } else {
+            heroTitle.classList.remove('typing-animation');
+        }
+    };
+    
+    setTimeout(typeWriter, 100);
+}
+// Global CTA visibility
+function initGlobalCTA() {
+    const bar = document.querySelector('.global-cta-bar');
+    if (!bar) {
+        return;
+    }
+
+    const hideClass = 'cta-hidden';
+    const hideTargets = document.querySelectorAll('#contacts, .footer');
+
+    if ('IntersectionObserver' in window && hideTargets.length) {
+        const observer = new IntersectionObserver((entries) => {
+            const shouldHide = entries.some(entry => entry.isIntersecting);
+            bar.classList.toggle(hideClass, shouldHide);
+        }, { threshold: 0.1 });
+
+        hideTargets.forEach(target => observer.observe(target));
     }
 }
 
@@ -298,7 +340,7 @@ document.addEventListener('click', function(e) {
 // Scroll to Top Button
 function initScrollToTop() {
     const scrollToTopBtn = document.createElement('button');
-    scrollToTopBtn.innerHTML = '↑';
+    scrollToTopBtn.innerHTML = '&uarr;';
     scrollToTopBtn.className = 'scroll-to-top';
     scrollToTopBtn.style.cssText = `
         position: fixed;

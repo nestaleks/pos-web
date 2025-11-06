@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectis Support & Onboarding</title>
+    <meta name="description" content="Access the Vectis support center, rollout guides, API documentation, system status, and contact channels.">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo" aria-label="Vectis">
+                    <img src="assets/images/logo.png" alt="Vectis logo" class="logo-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display: none; font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">Vectis</span>
+                </div>
+                <nav class="navigation" aria-label="Primary">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Overview</a></li>
+                        <li class="nav-item"><a href="features.html" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                        <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                        <li class="nav-item"><a href="index.html#case-studies" class="nav-link">Stories</a></li>
+                        <li class="nav-item"><a href="support.html" class="nav-link" aria-current="page">Support</a></li>
+                        <li class="nav-item"><a href="support.html#contacts" class="nav-link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu-overlay"></div>
+    
+    <nav class="mobile-navigation" aria-label="Mobile">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Overview</a></li>
+            <li><a href="features.html" class="mobile-nav-link">Features</a></li>
+            <li><a href="industries.html" class="mobile-nav-link">Industries</a></li>
+            <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+            <li><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
+            <li><a href="index.html#case-studies" class="mobile-nav-link">Stories</a></li>
+            <li><a href="support.html" class="mobile-nav-link">Support</a></li>
+            <li><a href="support.html#contacts" class="mobile-nav-link">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Support, onboarding, and success services</h1>
+                <p>Our team is available 24x7 across channels. Explore resources, training, and rollout guidance tailored to every venue.</p>
+                <div class="hero-actions">
+                    <a href="#support" class="btn btn-primary">Support options</a>
+                    <a href="#contacts" class="btn btn-outline">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support" class="support">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Support and enablement</h2>
+                <p class="section-description">Knowledge, people, and monitoring that keep every venue online.</p>
+            </div>
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <img src="assets/images/icons/help.svg" alt="Help center" loading="lazy">
+                    </div>
+                    <h3 class="support-title">Knowledge portal</h3>
+                    <p class="support-description">Guides, checklists, and how to videos for managers and teams.</p>
+                    <a href="#knowledge" class="btn btn-outline">Browse articles</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <img src="assets/images/icons/chat.svg" alt="Live chat" loading="lazy">
+                    </div>
+                    <h3 class="support-title">Live desk</h3>
+                    <p class="support-description">Average response under 2 minutes via chat or phone at any hour.</p>
+                    <a href="#contacts" class="btn btn-primary">Contact support</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <img src="assets/images/icons/video.svg" alt="Video training" loading="lazy">
+                    </div>
+                    <h3 class="support-title">Vectis Academy</h3>
+                    <p class="support-description">Online certification tracks for baristas, cashiers, and managers.</p>
+                    <a href="#academy" class="btn btn-outline">Join a course</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <img src="assets/images/icons/phone.svg" alt="Monitoring" loading="lazy">
+                    </div>
+                    <h3 class="support-title">Proactive monitoring</h3>
+                    <p class="support-description">Device health, connectivity, and payment checks trigger alerts before downtime.</p>
+                    <a href="#status" class="btn btn-outline">View monitoring</a>
+                </div>
+            </div>
+            <div class="support-cta">
+                <h3>Need help right now?</h3>
+                <p>Call +49 (30) 555-8294 and reach an engineer within 120 seconds.</p>
+                <div class="support-actions">
+                    <a href="tel:+493055582945" class="btn btn-primary">Call support</a>
+                    <a href="#contacts" class="btn btn-outline">Book training</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="knowledge" class="knowledge-base">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Knowledge base &amp; academy</h2>
+                <p class="section-description">Self-service documentation and learning paths that keep teams aligned.</p>
+            </div>
+            <div class="knowledge-grid" id="academy">
+                <article class="knowledge-card">
+                    <h3>Manager handbook</h3>
+                    <ul>
+                        <li>Daily operations checklist</li>
+                        <li>Menu and pricing updates</li>
+                        <li>Inventory investigations</li>
+                        <li>Shift performance dashboards</li>
+                    </ul>
+                    <a href="#" class="card-link">Download PDF</a>
+                </article>
+                <article class="knowledge-card">
+                    <h3>Front-of-house training</h3>
+                    <ul>
+                        <li>POS workflows and mobile ordering</li>
+                        <li>Loyalty and gift redemption</li>
+                        <li>Cash management guidelines</li>
+                        <li>Guest feedback capture</li>
+                    </ul>
+                    <a href="#" class="card-link">Enroll cohorts</a>
+                </article>
+                <article class="knowledge-card">
+                    <h3>Kitchen &amp; production</h3>
+                    <ul>
+                        <li>KDS configuration and routing</li>
+                        <li>Prep deck and batch planning</li>
+                        <li>Waste logging and analysis</li>
+                        <li>Health &amp; safety audits</li>
+                    </ul>
+                    <a href="#" class="card-link">Schedule workshop</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="rollout" class="rollout-guide">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Rollout playbook</h2>
+                <p class="section-description">Follow our proven steps to deploy Vectis across existing or new locations.</p>
+            </div>
+            <div class="rollout-steps">
+                <div class="rollout-step">
+                    <h3>1. Discovery &amp; blueprint</h3>
+                    <p>Audit current tools, map integrations, collect menus, and set success metrics.</p>
+                </div>
+                <div class="rollout-step">
+                    <h3>2. Configuration</h3>
+                    <p>Build menu trees, roles, tax rules, loyalty programs, and accounting exports.</p>
+                </div>
+                <div class="rollout-step">
+                    <h3>3. Pilot &amp; training</h3>
+                    <p>Soft-launch in a pilot site, train teams, gather feedback, and validate workflows.</p>
+                </div>
+                <div class="rollout-step">
+                    <h3>4. Launch &amp; optimisation</h3>
+                    <p>Roll out to remaining venues, enable live monitoring, and review KPIs weekly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="api" class="api-section">
+        <div class="container">
+            <div class="api-grid">
+                <div class="api-text">
+                    <h2>Developer resources</h2>
+                    <p>Build on top of the Vectis platform with REST APIs, webhooks, and SDKs.</p>
+                    <ul>
+                        <li>Authentication guides and sandbox access</li>
+                        <li>Menu, order, and inventory endpoints</li>
+                        <li>Webhooks for loyalty, payments, and status events</li>
+                        <li>SDKs for order capture and delivery tracking</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Open developer portal</a>
+                </div>
+                <div class="api-status" id="status">
+                    <h3>System status</h3>
+                    <p><strong>99.98%</strong> uptime over the past 30 days.</p>
+                    <ul>
+                        <li>POS cloud: <span class="status-pill status-ok">Operational</span></li>
+                        <li>API &amp; webhooks: <span class="status-pill status-ok">Operational</span></li>
+                        <li>Integrations hub: <span class="status-pill status-ok">Operational</span></li>
+                        <li>Reporting services: <span class="status-pill status-ok">Operational</span></li>
+                    </ul>
+                    <a href="#" class="card-link">Subscribe to updates</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact us</h2>
+                <p class="section-description">Tell us about your operation and we will prepare a demo and ROI plan.</p>
+            </div>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" role="presentation">
+                                <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>Friedrichstrasse 95<br>10117 Berlin, Germany</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" role="presentation">
+                                <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.57.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1c-9.39 0-17-7.61-17-17a1 1 0 0 1 1-1H6.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57.11.35.03.74-.24 1.02l-1.21 1.2z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+49 (30) 555-8294</p>
+                            <p class="contact-note">Monday to Friday, 09:00 to 18:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" role="presentation">
+                                <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01L12 13l8-6.99V6H4zm16 12V9.3l-7.47 5.64a1 1 0 0 1-1.06 0L4 9.3V18h16z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@vectis.de</p>
+                            <p class="contact-note">We reply within one business day</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" role="presentation">
+                                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 11h4v-2h-3V7h-2v6z"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Business hours</h4>
+                            <p>Mon to Fri: 09:00 - 18:00</p>
+                            <p>Sat to Sun: 10:00 - 16:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <h3>Send us a message</h3>
+                        <div class="form-group">
+                            <label for="name">Full name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="sales">Sales inquiry</option>
+                                <option value="support">Technical support</option>
+                                <option value="billing">Billing question</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="privacy.html">Privacy Policy</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-map" role="presentation" aria-hidden="true">
+                <div class="contact-map-placeholder">
+                    <span>Showroom located five minutes from Friedrichstrasse Bahnhof.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="Vectis" loading="lazy">
+                    </div>
+                    <p class="footer-description">
+                        Cloud POS platform for restaurant and retail operations. Control every process, keep fiscal compliance, and monitor performance from one dashboard.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com" class="social-link" aria-label="Facebook"><span aria-hidden="true">Fb</span></a>
+                        <a href="https://www.linkedin.com" class="social-link" aria-label="LinkedIn"><span aria-hidden="true">In</span></a>
+                        <a href="https://www.youtube.com" class="social-link" aria-label="YouTube"><span aria-hidden="true">YT</span></a>
+                        <a href="https://www.instagram.com" class="social-link" aria-label="Instagram"><span aria-hidden="true">Ig</span></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html#integrations">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#case-studies">Customers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="support.html" aria-current="page">Support center</a></li>
+                        <li><a href="#knowledge">Documentation</a></li>
+                        <li><a href="#api">API</a></li>
+                        <li><a href="#status">System status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contacts</h4>
+                    <div class="footer-contact">
+                        <p>Email: info@vectis.de</p>
+                        <p>Phone: +49 (30) 555-8294</p>
+                        <p>Berlin, Germany</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footeropyright">
+                        <p>&copy; 2024 Vectis. All rights reserved.</p>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="global-cta-bar" role="region" aria-label="Sticky call to action">
+        <div class="global-cta-content">
+            <span>Ready to accelerate every location?</span>
+            <div class="global-cta-actions">
+                <a href="#contacts" class="btn btn-primary btn-small">Request demo</a>
+                <a href="pricing.html" class="btn btn-outline btn-small">See pricing</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

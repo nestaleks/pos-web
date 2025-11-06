@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vectis - Cash Register for Business Automation</title>
-    <meta name="description" content="Modern  POS system for restaurants, cafes, stores and other businesses. Control all processes in one program.">
+    <title>Vectis POS Platform - Omnichannel Operations in One Suite</title>
+    <meta name="description" content="Vectis is a cloud POS platform with fiscal compliance, inventory, and analytics for restaurants, cafes, and retail. Launch in 7 days.">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <img src="assets/images/logo.png" alt="Vectis" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="logo" aria-label="Vectis">
+                    <img src="assets/images/logo.png" alt="Vectis logo" class="logo-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <span style="display: none; font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">Vectis</span>
                 </div>
-                <nav class="navigation">
+                <nav class="navigation" aria-label="Primary">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="#main" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
-                        <li class="nav-item"><a href="#support" class="nav-link">Support</a></li>
-                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Overview</a></li>
+                        <li class="nav-item"><a href="features.html" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+                        <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                        <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+                        <li class="nav-item"><a href="index.html#case-studies" class="nav-link">Stories</a></li>
+                        <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
+                        <li class="nav-item"><a href="support.html#contacts" class="nav-link">Contacts</a></li>
                     </ul>
                 </nav>
                 <button class="mobile-menu-toggle" aria-label="Open menu">
@@ -36,427 +37,285 @@
         </div>
     </header>
 
-    <!-- Mobile menu overlay -->
     <div class="mobile-menu-overlay"></div>
     
-    <!-- Separate mobile navigation -->
-    <nav class="mobile-navigation">
+    <nav class="mobile-navigation" aria-label="Mobile">
         <ul class="mobile-nav-list">
-            <li><a href="#main" class="mobile-nav-link">Home</a></li>
-            <li><a href="#features" class="mobile-nav-link">Features</a></li>
-            <li><a href="#about" class="mobile-nav-link">About</a></li>
-            <li><a href="#pricing" class="mobile-nav-link">Pricing</a></li>
-            <li><a href="#support" class="mobile-nav-link">Support</a></li>
-            <li><a href="#contacts" class="mobile-nav-link">Contacts</a></li>
+            <li><a href="index.html" class="mobile-nav-link">Overview</a></li>
+            <li><a href="features.html" class="mobile-nav-link">Features</a></li>
+            <li><a href="industries.html" class="mobile-nav-link">Industries</a></li>
+            <li><a href="products.html" class="mobile-nav-link">Products</a></li>
+            <li><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
+            <li><a href="#case-studies" class="mobile-nav-link">Stories</a></li>
+            <li><a href="support.html" class="mobile-nav-link">Support</a></li>
+            <li><a href="support.html#contacts" class="mobile-nav-link">Contacts</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section id="main" class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">Cash Register for Business Automation</h1>
-                    <p class="hero-description">
-                        Vectis is a modern business management system for restaurants, cafes, stores and other enterprises. Control all processes in one program.
-                    </p>
+                    <span class="hero-kicker">POS platform built for growth</span>
+                    <h1 class="hero-title">Vectis orchestrates orders, stock, and finance across every venue</h1>
+                    <p class="hero-description">Launch a compliant cloud POS, inventory, and analytics stack in just 7 days. Purpose built for restaurants, cafes, dark kitchens, and specialty retail across the EU.</p>
                     <div class="hero-actions">
-                        <a href="#register" class="btn btn-primary btn-large">Try for Free</a>
-                        <a href="#demo" class="btn btn-outline btn-large">Watch Demo</a>
+                        <a href="support.html#contacts" class="btn btn-primary btn-large">Request demo</a>
+                        <a href="pricing.html" class="btn btn-outline btn-large">View pricing</a>
                     </div>
-                    <div class="hero-features">
+                    <ul class="hero-bullets">
+                        <li>Fiscal receipts and KassenSichV compliance</li>
+                        <li>Real time inventory and recipe costing</li>
+                        <li>Delivery, ecommerce, and courier sync</li>
+                        <li>BI dashboards with shift performance KPIs</li>
+                    </ul>
+                    <div class="hero-metrics">
                         <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Works on any platform</span>
+                            <span class="feature-icon">7 days</span>
+                            <span>Average deployment window</span>
                         </div>
                         <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Cloud data storage</span>
+                            <span class="feature-icon">99.9%</span>
+                            <span>Platform availability SLA</span>
                         </div>
                         <div class="feature-item">
-                            <span class="feature-icon">✓</span>
-                            <span>Easy setup</span>
+                            <span class="feature-icon">24x7</span>
+                            <span>Operations support desk</span>
                         </div>
                     </div>
+                    <p class="hero-trust">Teams like FoodLab Group, Brewster Coffee, and Markt24 cut waste by 21 percent with Vectis.</p>
                 </div>
                 <div class="hero-image">
-                    <img src="assets/images/hero-dashboard.svg" alt="Dashboard SkyService" class="dashboard-img">
+                    <div class="hero-device">
+                        <img src="assets/images/hero-dashboard.svg" alt="Vectis POS dashboard" class="dashboard-img" loading="lazy">
+                        <div class="hero-highlight">
+                            <h3>Live command center</h3>
+                            <p>Revenue, payment mix, and kitchen load refresh every 30 seconds.</p>
+                            <ul>
+                                <li>Stop list control</li>
+                                <li>Payment reconciliation alerts</li>
+                                <li>Shift notifications</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <section class="overview-grid">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">System Features</h2>
-                <p class="section-description">All the necessary tools to manage your business</p>
+                <h2 class="section-title">Explore the Vectis platform</h2>
+                <p class="section-description">Dive deep into the modules that power thousands of hospitality and retail venues.</p>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="assets/images/icons/pos.svg" alt="POS System">
-                    </div>
-                    <h3 class="feature-title">POS System</h3>
-                    <p class="feature-description">Fast order processing and customer billing</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="assets/images/icons/inventory.svg" alt="Inventory Management">
-                    </div>
-                    <h3 class="feature-title">Inventory Management</h3>
-                    <p class="feature-description">Inventory control and automatic write-offs</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="assets/images/icons/analytics.svg" alt="Analytics">
-                    </div>
-                    <h3 class="feature-title">Analytics & Reports</h3>
-                    <p class="feature-description">Detailed sales statistics and financial reports</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="assets/images/icons/loyalty.svg" alt="Loyalty Program">
-                    </div>
-                    <h3 class="feature-title">Loyalty Program</h3>
-                    <p class="feature-description">Bonus system for customer attraction</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="assets/images/icons/integration.svg" alt="Integrations">
-                    </div>
-                    <h3 class="feature-title">Integrations</h3>
-                    <p class="feature-description">Connection to popular delivery services</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="assets/images/icons/support.svg" alt="Support">
-                    </div>
-                    <h3 class="feature-title">24/7 Support</h3>
-                    <p class="feature-description">Round-the-clock technical support</p>
-                </div>
+            <div class="overview-cards">
+                <article class="overview-card">
+                    <h3>Product &amp; Integrations</h3>
+                    <p>See every module in detail: POS, KDS, inventory, CRM, analytics, and integrations with ERPs, delivery platforms, and payment providers.</p>
+                    <a href="features.html" class="card-link">Open product tour</a>
+                </article>
+                <article class="overview-card">
+                    <h3>Industries we serve</h3>
+                    <p>Discover tailored playbooks for restaurant groups, fast casual, gourmet retail, dark kitchen and delivery-first formats.</p>
+                    <a href="industries.html" class="card-link">View industry playbooks</a>
+                </article>
+                <article class="overview-card">
+                    <h3>Plans &amp; ROI</h3>
+                    <p>Compare plans, estimate roll-out budgets, and understand how Vectis pays off through waste reduction and higher average checks.</p>
+                    <a href="pricing.html" class="card-link">Compare pricing</a>
+                </article>
+                <article class="overview-card">
+                    <h3>Support &amp; onboarding</h3>
+                    <p>Review SLAs, onboarding workflows, academy resources, and the contact options available to your teams around the clock.</p>
+                    <a href="support.html" class="card-link">Visit support center</a>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <section class="metrics">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="about-title">About Vectis</h2>
-                    <p class="about-description">
-                        Vectis is a modern cloud system for automating restaurants, cafes, stores and other enterprises. We help businesses work more efficiently since 2015.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">10,000+</span>
-                            <span class="stat-label">Active Users</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Countries</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Support</span>
-                        </div>
-                    </div>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-value">21%</span>
+                    <span class="metric-label">Less write off waste thanks to automated stock control</span>
                 </div>
-                <div class="about-image">
-                    <img src="assets/images/about-office.jpg" alt="SkyService Office">
+                <div class="metric-card">
+                    <span class="metric-value">17%</span>
+                    <span class="metric-label">Average check lift using targeted loyalty campaigns</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value">4 hrs</span>
+                    <span class="metric-label">Time to launch a new venue with roles and menu presets</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-value">GDPR</span>
+                    <span class="metric-label">Compliance with EU data residency and security rules</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
+    <section class="resource-preview">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Pricing Plans</h2>
-                <p class="section-description">Choose the right plan for your business</p>
+            <div class="resource-grid">
+                <article class="resource-card">
+                    <h3>Rollout blueprint</h3>
+                    <p>From discovery to go-live. Read the implementation checklist our customer success team follows for multi-site operators.</p>
+                    <a href="support.html#rollout" class="card-link">Download PDF</a>
+                </article>
+                <article class="resource-card">
+                    <h3>Operations benchmarks</h3>
+                    <p>See how leading groups track labor, COGS, and guest satisfaction after moving to Vectis.</p>
+                    <a href="pricing.html#roi" class="card-link">See benchmarks</a>
+                </article>
             </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3 class="pricing-title">Starter</h3>
-                        <div class="pricing-price">
-                            <span class="price-currency">€</span>
-                            <span class="price-amount">29</span>
-                            <span class="price-period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Up to 2 workstations</li>
-                        <li>Basic analytics</li>
-                        <li>Email support</li>
-                        <li>Mobile application</li>
-                    </ul>
-                    <a href="#register" class="btn btn-outline">Choose Plan</a>
+        </div>
+    </section>
+
+    <section class="cta-split">
+        <div class="container">
+            <div class="cta-panel">
+                <div class="cta-text">
+                    <h2>Need a personalised ROI projection?</h2>
+                    <p>Work with our consultants to map integrations, hardware, and a migration timeline tailored to your venues.</p>
                 </div>
-                <div class="pricing-card pricing-featured">
-                    <div class="pricing-badge">Popular</div>
-                    <div class="pricing-header">
-                        <h3 class="pricing-title">Professional</h3>
-                        <div class="pricing-price">
-                            <span class="price-currency">€</span>
-                            <span class="price-amount">89</span>
-                            <span class="price-period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Up to 10 workstations</li>
-                        <li>Advanced analytics</li>
-                        <li>Priority support</li>
-                        <li>Integrations</li>
-                        <li>Loyalty program</li>
-                    </ul>
-                    <a href="#register" class="btn btn-primary">Choose Plan</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3 class="pricing-title">Enterprise</h3>
-                        <div class="pricing-price">
-                            <span class="price-currency">€</span>
-                            <span class="price-amount">179</span>
-                            <span class="price-period">/month</span>
-                        </div>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>Unlimited workstations</li>
-                        <li>Full analytics</li>
-                        <li>24/7 support</li>
-                        <li>All integrations</li>
-                        <li>Personal manager</li>
-                    </ul>
-                    <a href="#register" class="btn btn-outline">Choose Plan</a>
+                <div class="cta-actions">
+                    <a href="pricing.html#calculator" class="btn btn-primary">Start ROI calculator</a>
+                    <a href="support.html#contacts" class="btn btn-outline">Talk to an expert</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Support Section -->
-    <section id="support" class="support">
+    <section id="case-studies" class="case-studies">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Support Center</h2>
-                <p class="section-description">We're here to help you succeed with Vectis</p>
+                <h2 class="section-title">Customer stories</h2>
+                <p class="section-description">See how operators scale with confidence on Vectis.</p>
             </div>
-            <div class="support-grid">
-                <div class="support-card">
-                    <div class="support-icon">
-                        <img src="assets/images/icons/help.svg" alt="Help Center">
-                    </div>
-                    <h3 class="support-title">Help Center</h3>
-                    <p class="support-description">Find answers to common questions and detailed guides</p>
-                    <a href="#help" class="btn btn-outline">Browse Articles</a>
-                </div>
-                <div class="support-card">
-                    <div class="support-icon">
-                        <img src="assets/images/icons/chat.svg" alt="Live Chat">
-                    </div>
-                    <h3 class="support-title">Live Chat</h3>
-                    <p class="support-description">Chat with our support team in real-time</p>
-                    <a href="#chat" class="btn btn-primary">Start Chat</a>
-                </div>
-                <div class="support-card">
-                    <div class="support-icon">
-                        <img src="assets/images/icons/video.svg" alt="Video Tutorials">
-                    </div>
-                    <h3 class="support-title">Video Tutorials</h3>
-                    <p class="support-description">Watch step-by-step video guides</p>
-                    <a href="#tutorials" class="btn btn-outline">Watch Videos</a>
-                </div>
-                <div class="support-card">
-                    <div class="support-icon">
-                        <img src="assets/images/icons/phone.svg" alt="Phone Support">
-                    </div>
-                    <h3 class="support-title">Phone Support</h3>
-                    <p class="support-description">Call us for immediate assistance</p>
-                    <a href="tel:+493055582945" class="btn btn-outline">Call Now</a>
-                </div>
-                <div class="support-card">
-                    <div class="support-icon">
-                        <img src="assets/images/icons/email.svg" alt="Email Support">
-                    </div>
-                    <h3 class="support-title">Email Support</h3>
-                    <p class="support-description">Send us your questions via email</p>
-                    <a href="mailto:support@vectis.de" class="btn btn-outline">Send Email</a>
-                </div>
-                <div class="support-card">
-                    <div class="support-icon">
-                        <img src="assets/images/icons/api.svg" alt="API Documentation">
-                    </div>
-                    <h3 class="support-title">API Documentation</h3>
-                    <p class="support-description">Technical documentation for developers</p>
-                    <a href="#api-docs" class="btn btn-outline">View Docs</a>
-                </div>
-            </div>
-            <div class="support-cta">
-                <h3>Need immediate help?</h3>
-                <p>Our support team is available 24/7 to assist you</p>
-                <div class="support-actions">
-                    <a href="#emergency" class="btn btn-primary">Emergency Support</a>
-                    <a href="#schedule" class="btn btn-outline">Schedule Call</a>
-                </div>
+            <div class="case-grid">
+                <article class="case-card">
+                    <h3>FoodLab Group</h3>
+                    <p class="case-result">12 restaurants | Berlin</p>
+                    <p>Unified analytics reduced order prep time by 28 percent and automated purchasing across the group.</p>
+                    <a href="industries.html#restaurants" class="case-link">Discuss a similar rollout</a>
+                </article>
+                <article class="case-card">
+                    <h3>Brewster Coffee</h3>
+                    <p class="case-result">Coffee chain | Hamburg</p>
+                    <p>Connected loyalty, mobile order, and POS to lift repeat purchases by 19 percent and shorten peak queues.</p>
+                    <a href="industries.html#fast-casual" class="case-link">Request the playbook</a>
+                </article>
+                <article class="case-card">
+                    <h3>Markt24</h3>
+                    <p class="case-result">Gourmet retail | Munich</p>
+                    <p>Batch and expiry control now takes two hours instead of eight using tablet inventory counts and DATEV sync.</p>
+                    <a href="industries.html#retail" class="case-link">Plan your migration</a>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contacts" class="contacts">
+    <section id="integrations" class="integrations">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact Us</h2>
-                <p class="section-description">Get in touch with our team</p>
-            </div>
-            <div class="contacts-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div class="contact-details">
-                            <h4>Address</h4>
-                            <p>Friedrichstraße 95<br>10117 Berlin, Germany</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📞</div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>+49 (30) 555-8294</p>
-                            <p class="contact-note">Monday - Friday, 9:00 - 18:00</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>info@vectis.de</p>
-                            <p class="contact-note">We'll respond within 24 hours</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">💼</div>
-                        <div class="contact-details">
-                            <h4>Business Hours</h4>
-                            <p>Mon-Fri: 9:00 - 18:00</p>
-                            <p>Sat-Sun: 10:00 - 16:00</p>
-                        </div>
-                    </div>
+            <div class="integrations-content">
+                <div>
+                    <h2 class="section-title">Integrations and API</h2>
+                    <p class="section-description">Vectis connects POS, accounting, delivery, and marketing systems with an open REST API, webhooks, and SDK support.</p>
                 </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form">
-                        <h3>Send us a message</h3>
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="company">Company Name</label>
-                            <input type="text" id="company" name="company">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select a subject</option>
-                                <option value="sales">Sales Inquiry</option>
-                                <option value="support">Technical Support</option>
-                                <option value="billing">Billing Question</option>
-                                <option value="partnership">Partnership</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="form-group checkbox-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="privacy" required>
-                                <span class="checkmark"></span>
-                                I agree to the <a href="#privacy">Privacy Policy</a>
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+                <ul class="integration-list">
+                    <li>Lieferando</li>
+                    <li>Wolt</li>
+                    <li>Uber Eats</li>
+                    <li>DATEV</li>
+                    <li>Microsoft Dynamics</li>
+                    <li>SAP</li>
+                    <li>Adyen</li>
+                    <li>SumUp</li>
+                    <li>Mailchimp</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="assets/images/logo.png" alt="Vectis">
+                        <img src="assets/images/logo.png" alt="Vectis" loading="lazy">
                     </div>
                     <p class="footer-description">
-                        Cloud cash register for business automation. Control all processes in one program.
+                        Cloud POS platform for restaurant and retail operations. Control every process, keep fiscal compliance, and monitor performance from one dashboard.
                     </p>
                     <div class="footer-social">
-                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
-                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
-                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="https://www.facebook.com" class="social-link" aria-label="Facebook"><span aria-hidden="true">Fb</span></a>
+                        <a href="https://www.linkedin.com" class="social-link" aria-label="LinkedIn"><span aria-hidden="true">In</span></a>
+                        <a href="https://www.youtube.com" class="social-link" aria-label="YouTube"><span aria-hidden="true">YT</span></a>
+                        <a href="https://www.instagram.com" class="social-link" aria-label="Instagram"><span aria-hidden="true">Ig</span></a>
                     </div>
                 </div>
                 <div class="footer-section">
                     <h4 class="footer-title">Product</h4>
                     <ul class="footer-links">
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#pricing">Pricing</a></li>
-                        <li><a href="#integrations">Integrations</a></li>
-                        <li><a href="#mobile">Mobile App</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html#integrations">Integrations</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4 class="footer-title">Company</h4>
                     <ul class="footer-links">
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#careers">Careers</a></li>
-                        <li><a href="#press">Press</a></li>
+                        <li><a href="#case-studies">Customers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="press.html">Press</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4 class="footer-title">Support</h4>
                     <ul class="footer-links">
-                        <li><a href="#support">Support Center</a></li>
-                        <li><a href="#documentation">Documentation</a></li>
-                        <li><a href="#api">API</a></li>
-                        <li><a href="#status">System Status</a></li>
+                        <li><a href="support.html">Support center</a></li>
+                        <li><a href="support.html#knowledge">Documentation</a></li>
+                        <li><a href="support.html#api">API</a></li>
+                        <li><a href="support.html#status">System status</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4 class="footer-title">Contacts</h4>
                     <div class="footer-contact">
-                        <p>📧 info@vectis.de</p>
-                        <p>📞 +49 (30) 555-8294</p>
-                        <p>📍 Berlin, Germany</p>
+                        <p>Email: info@vectis.de</p>
+                        <p>Phone: +49 (30) 555-8294</p>
+                        <p>Berlin, Germany</p>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
-                    <div class="footer-copyright">
+                    <div class="footeropyright">
                         <p>&copy; 2024 Vectis. All rights reserved.</p>
                     </div>
                     <div class="footer-legal">
-                        <a href="#privacy">Privacy Policy</a>
-                        <a href="#terms">Terms of Service</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <div class="global-cta-bar" role="region" aria-label="Sticky call to action">
+        <div class="global-cta-content">
+            <span>Ready to accelerate every location?</span>
+            <div class="global-cta-actions">
+                <a href="support.html#contacts" class="btn btn-primary btn-small">Request demo</a>
+                <a href="pricing.html" class="btn btn-outline btn-small">See pricing</a>
+            </div>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
