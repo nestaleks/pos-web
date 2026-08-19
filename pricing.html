@@ -3,56 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#071a24">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
     <title>Vectis Pricing & ROI</title>
     <meta name="description" content="Compare Vectis pricing plans, calculate ROI, and explore rollout options for your venues.">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animations.css">
+    <script src="js/components.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo" aria-label="Vectis">
-                    <img src="assets/images/logo.png" alt="Vectis logo" class="logo-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <span style="display: none; font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">Vectis</span>
-                </div>
-                <nav class="navigation" aria-label="Primary">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="index.html" class="nav-link">Overview</a></li>
-                        <li class="nav-item"><a href="features.html" class="nav-link">Features</a></li>
-                        <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
-                        <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-                        <li class="nav-item"><a href="pricing.html" class="nav-link" aria-current="page">Pricing</a></li>
-                        <li class="nav-item"><a href="index.html#case-studies" class="nav-link">Stories</a></li>
-                        <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
-                        <li class="nav-item"><a href="support.html#contacts" class="nav-link">Contacts</a></li>
-                    </ul>
-                </nav>
-                <button class="mobile-menu-toggle" aria-label="Open menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <div id="header-placeholder"></div>
 
-    <div class="mobile-menu-overlay"></div>
-    
-    <nav class="mobile-navigation" aria-label="Mobile">
-        <ul class="mobile-nav-list">
-            <li><a href="index.html" class="mobile-nav-link">Overview</a></li>
-            <li><a href="features.html" class="mobile-nav-link">Features</a></li>
-            <li><a href="industries.html" class="mobile-nav-link">Industries</a></li>
-            <li><a href="products.html" class="mobile-nav-link">Products</a></li>
-            <li><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
-            <li><a href="index.html#case-studies" class="mobile-nav-link">Stories</a></li>
-            <li><a href="support.html" class="mobile-nav-link">Support</a></li>
-            <li><a href="support.html#contacts" class="mobile-nav-link">Contacts</a></li>
-        </ul>
-    </nav>
+    <div id="mobile-menu-placeholder"></div>
 
-    <section class="page-hero">
+    <main id="main-content">
+<section class="page-hero">
         <div class="container">
             <div class="page-hero-content">
                 <h1>Pricing built for multi-location growth</h1>
@@ -73,6 +38,11 @@
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
+                    <div class="card-image card-image--wide visual-card visual-card--terminal" role="img" aria-label="Starter plan equipment">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Starter POS</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <div class="pricing-header">
                         <h3 class="pricing-title">Starter</h3>
                         <div class="pricing-price">
@@ -91,6 +61,11 @@
                 </div>
                 <div class="pricing-card pricing-featured">
                     <div class="pricing-badge">Most popular</div>
+                    <div class="card-image card-image--wide visual-card visual-card--network" role="img" aria-label="Professional plan bundle">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Professional Bundle</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <div class="pricing-header">
                         <h3 class="pricing-title">Professional</h3>
                         <div class="pricing-price">
@@ -109,6 +84,11 @@
                     <a href="support.html#contacts" class="btn btn-primary">Talk to sales</a>
                 </div>
                 <div class="pricing-card">
+                    <div class="card-image card-image--wide visual-card visual-card--chart" role="img" aria-label="Enterprise solutions">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Enterprise Suite</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <div class="pricing-header">
                         <h3 class="pricing-title">Enterprise</h3>
                         <div class="pricing-price">
@@ -135,6 +115,11 @@
         <div class="container">
             <div class="roi-grid">
                 <article class="roi-card">
+                    <div class="card-image card-image--medium visual-card visual-card--workflow" role="img" aria-label="Included services illustration">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Included Services</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <h3>Included in every plan</h3>
                     <ul>
                         <li>Cloud hosting in EU regions with redundancy</li>
@@ -144,6 +129,11 @@
                     </ul>
                 </article>
                 <article class="roi-card">
+                    <div class="card-image card-image--medium visual-card visual-card--workflow" role="img" aria-label="Optional add-ons illustration">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Optional Add-ons</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <h3>Optional add-ons</h3>
                     <ul>
                         <li>Hardware leasing with on-site swap service</li>
@@ -160,6 +150,11 @@
         <div class="container">
             <div class="roi-calculator-content">
                 <div class="roi-calculator-text">
+                    <div class="card-image card-image--wide visual-card visual-card--chart" role="img" aria-label="ROI dashboard">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>ROI Dashboard</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <h2>Build your ROI scenario</h2>
                     <p>Enter your current throughput, waste, and average check to compare before and after metrics with Vectis.</p>
                     <ul>
@@ -172,24 +167,24 @@
                 </div>
                 <form class="roi-form">
                     <h3>Quick estimate</h3>
-                    <label>
+                    <label for="roi-revenue">
                         Current monthly revenue (€)
-                        <input type="number" placeholder="50 000" min="0">
+                        <input id="roi-revenue" name="revenue" type="number" placeholder="50 000" min="0" step="100" inputmode="decimal" required>
                     </label>
-                    <label>
+                    <label for="roi-locations">
                         Locations
-                        <input type="number" placeholder="5" min="1">
+                        <input id="roi-locations" name="locations" type="number" placeholder="5" min="1" step="1" inputmode="numeric" required>
                     </label>
-                    <label>
+                    <label for="roi-food-cost">
                         Average food cost %
-                        <input type="number" placeholder="32" min="0" max="100">
+                        <input id="roi-food-cost" name="foodCost" type="number" placeholder="32" min="0" max="100" step="0.1" inputmode="decimal" required>
                     </label>
-                    <label>
+                    <label for="roi-waste">
                         Current waste %
-                        <input type="number" placeholder="6" min="0" max="100">
+                        <input id="roi-waste" name="waste" type="number" placeholder="6" min="0" max="100" step="0.1" inputmode="decimal" required>
                     </label>
-                    <button type="button" class="btn btn-outline">Calculate savings</button>
-                    <p class="form-note">We will email a full ROI dashboard created by our consultants.</p>
+                    <button type="submit" class="btn btn-outline">Calculate savings</button>
+                    <p class="form-note">Illustrative inventory estimate based on the 21% waste reduction shown in Vectis customer results. Request a tailored model for a full ROI assessment.</p>
                 </form>
             </div>
         </div>
@@ -209,83 +204,9 @@
             </div>
         </div>
     </section>
+    </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="assets/images/logo.png" alt="Vectis" loading="lazy">
-                    </div>
-                    <p class="footer-description">
-                        Cloud POS platform for restaurant and retail operations. Control every process, keep fiscal compliance, and monitor performance from one dashboard.
-                    </p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com" class="social-link" aria-label="Facebook"><span aria-hidden="true">Fb</span></a>
-                        <a href="https://www.linkedin.com" class="social-link" aria-label="LinkedIn"><span aria-hidden="true">In</span></a>
-                        <a href="https://www.youtube.com" class="social-link" aria-label="YouTube"><span aria-hidden="true">YT</span></a>
-                        <a href="https://www.instagram.com" class="social-link" aria-label="Instagram"><span aria-hidden="true">Ig</span></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Product</h4>
-                    <ul class="footer-links">
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="pricing.html" aria-current="page">Pricing</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="index.html#integrations">Integrations</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html#case-studies">Customers</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="press.html">Press</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="support.html">Support center</a></li>
-                        <li><a href="support.html#knowledge">Documentation</a></li>
-                        <li><a href="support.html#api">API</a></li>
-                        <li><a href="support.html#status">System status</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Contacts</h4>
-                    <div class="footer-contact">
-                        <p>Email: info@vectis.de</p>
-                        <p>Phone: +49 (30) 555-8294</p>
-                        <p>Berlin, Germany</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <div class="footeropyright">
-                        <p>&copy; 2024 Vectis. All rights reserved.</p>
-                    </div>
-                    <div class="footer-legal">
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="terms.html">Terms of Service</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="global-cta-bar" role="region" aria-label="Sticky call to action">
-        <div class="global-cta-content">
-            <span>Ready to accelerate every location?</span>
-            <div class="global-cta-actions">
-                <a href="support.html#contacts" class="btn btn-primary btn-small">Request demo</a>
-                <a href="pricing.html" class="btn btn-outline btn-small" aria-current="page">See pricing</a>
-            </div>
-        </div>
-    </div>
+    <div id="footer-placeholder"></div>
 
     <script src="js/main.js"></script>
 </body>

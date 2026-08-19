@@ -3,56 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#071a24">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
     <title>Vectis POS Platform - Omnichannel Operations in One Suite</title>
     <meta name="description" content="Vectis is a cloud POS platform with fiscal compliance, inventory, and analytics for restaurants, cafes, and retail. Launch in 7 days.">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animations.css">
+    <script src="js/components.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo" aria-label="Vectis">
-                    <img src="assets/images/logo.png" alt="Vectis logo" class="logo-img" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <span style="display: none; font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">Vectis</span>
-                </div>
-                <nav class="navigation" aria-label="Primary">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="index.html" class="nav-link">Overview</a></li>
-                        <li class="nav-item"><a href="features.html" class="nav-link">Features</a></li>
-                        <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
-                        <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
-                        <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-                        <li class="nav-item"><a href="index.html#case-studies" class="nav-link">Stories</a></li>
-                        <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
-                        <li class="nav-item"><a href="support.html#contacts" class="nav-link">Contacts</a></li>
-                    </ul>
-                </nav>
-                <button class="mobile-menu-toggle" aria-label="Open menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <div id="header-placeholder"></div>
 
-    <div class="mobile-menu-overlay"></div>
-    
-    <nav class="mobile-navigation" aria-label="Mobile">
-        <ul class="mobile-nav-list">
-            <li><a href="index.html" class="mobile-nav-link">Overview</a></li>
-            <li><a href="features.html" class="mobile-nav-link">Features</a></li>
-            <li><a href="industries.html" class="mobile-nav-link">Industries</a></li>
-            <li><a href="products.html" class="mobile-nav-link">Products</a></li>
-            <li><a href="pricing.html" class="mobile-nav-link">Pricing</a></li>
-            <li><a href="#case-studies" class="mobile-nav-link">Stories</a></li>
-            <li><a href="support.html" class="mobile-nav-link">Support</a></li>
-            <li><a href="support.html#contacts" class="mobile-nav-link">Contacts</a></li>
-        </ul>
-    </nav>
+    <div id="mobile-menu-placeholder"></div>
 
-    <section id="main" class="hero">
+    <main id="main-content">
+<section id="main" class="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
@@ -111,21 +76,41 @@
             </div>
             <div class="overview-cards">
                 <article class="overview-card">
+                    <div class="card-image card-image--wide visual-card visual-card--terminal" role="img" aria-label="Vectis product modules preview">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Product Tour</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <h3>Product &amp; Integrations</h3>
                     <p>See every module in detail: POS, KDS, inventory, CRM, analytics, and integrations with ERPs, delivery platforms, and payment providers.</p>
                     <a href="features.html" class="card-link">Open product tour</a>
                 </article>
                 <article class="overview-card">
+                    <div class="card-image card-image--wide visual-card visual-card--venues" role="img" aria-label="Industry-specific workflows">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Industry Playbooks</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <h3>Industries we serve</h3>
                     <p>Discover tailored playbooks for restaurant groups, fast casual, gourmet retail, dark kitchen and delivery-first formats.</p>
                     <a href="industries.html" class="card-link">View industry playbooks</a>
                 </article>
                 <article class="overview-card">
+                    <div class="card-image card-image--wide visual-card visual-card--chart" role="img" aria-label="Pricing overview illustration">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Pricing & ROI</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <h3>Plans &amp; ROI</h3>
                     <p>Compare plans, estimate roll-out budgets, and understand how Vectis pays off through waste reduction and higher average checks.</p>
                     <a href="pricing.html" class="card-link">Compare pricing</a>
                 </article>
                 <article class="overview-card">
+                    <div class="card-image card-image--wide visual-card visual-card--workflow" role="img" aria-label="Support and onboarding">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Support Center</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <h3>Support &amp; onboarding</h3>
                     <p>Review SLAs, onboarding workflows, academy resources, and the contact options available to your teams around the clock.</p>
                     <a href="support.html" class="card-link">Visit support center</a>
@@ -161,11 +146,21 @@
         <div class="container">
             <div class="resource-grid">
                 <article class="resource-card">
+                    <div class="card-image card-image--wide visual-card visual-card--workflow" role="img" aria-label="Rollout blueprint illustration">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Rollout Blueprint</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <h3>Rollout blueprint</h3>
                     <p>From discovery to go-live. Read the implementation checklist our customer success team follows for multi-site operators.</p>
                     <a href="support.html#rollout" class="card-link">Download PDF</a>
                 </article>
                 <article class="resource-card">
+                    <div class="card-image card-image--wide visual-card visual-card--chart" role="img" aria-label="Operations benchmarks chart">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Operations Benchmarks</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <h3>Operations benchmarks</h3>
                     <p>See how leading groups track labor, COGS, and guest satisfaction after moving to Vectis.</p>
                     <a href="pricing.html#roi" class="card-link">See benchmarks</a>
@@ -197,18 +192,33 @@
             </div>
             <div class="case-grid">
                 <article class="case-card">
+                    <div class="card-image card-image--medium visual-card visual-card--venues" role="img" aria-label="FoodLab Group venues">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>FoodLab Group</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <h3>FoodLab Group</h3>
                     <p class="case-result">12 restaurants | Berlin</p>
                     <p>Unified analytics reduced order prep time by 28 percent and automated purchasing across the group.</p>
                     <a href="industries.html#restaurants" class="case-link">Discuss a similar rollout</a>
                 </article>
                 <article class="case-card">
+                    <div class="card-image card-image--medium visual-card visual-card--venues" role="img" aria-label="Brewster Coffee locations">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Brewster Coffee</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <h3>Brewster Coffee</h3>
                     <p class="case-result">Coffee chain | Hamburg</p>
                     <p>Connected loyalty, mobile order, and POS to lift repeat purchases by 19 percent and shorten peak queues.</p>
                     <a href="industries.html#fast-casual" class="case-link">Request the playbook</a>
                 </article>
                 <article class="case-card">
+                    <div class="card-image card-image--medium visual-card visual-card--venues" role="img" aria-label="Markt24 gourmet retail">
+                        <span class="visual-card__eyebrow">Vectis / live workspace</span>
+                        <strong>Markt24</strong>
+                        <span class="visual-card__canvas" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                    </div>
                     <h3>Markt24</h3>
                     <p class="case-result">Gourmet retail | Munich</p>
                     <p>Batch and expiry control now takes two hours instead of eight using tablet inventory counts and DATEV sync.</p>
@@ -239,83 +249,9 @@
             </div>
         </div>
     </section>
+    </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="assets/images/logo.png" alt="Vectis" loading="lazy">
-                    </div>
-                    <p class="footer-description">
-                        Cloud POS platform for restaurant and retail operations. Control every process, keep fiscal compliance, and monitor performance from one dashboard.
-                    </p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com" class="social-link" aria-label="Facebook"><span aria-hidden="true">Fb</span></a>
-                        <a href="https://www.linkedin.com" class="social-link" aria-label="LinkedIn"><span aria-hidden="true">In</span></a>
-                        <a href="https://www.youtube.com" class="social-link" aria-label="YouTube"><span aria-hidden="true">YT</span></a>
-                        <a href="https://www.instagram.com" class="social-link" aria-label="Instagram"><span aria-hidden="true">Ig</span></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Product</h4>
-                    <ul class="footer-links">
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="index.html#integrations">Integrations</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="#case-studies">Customers</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="careers.html">Careers</a></li>
-                        <li><a href="press.html">Press</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="support.html">Support center</a></li>
-                        <li><a href="support.html#knowledge">Documentation</a></li>
-                        <li><a href="support.html#api">API</a></li>
-                        <li><a href="support.html#status">System status</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 class="footer-title">Contacts</h4>
-                    <div class="footer-contact">
-                        <p>Email: info@vectis.de</p>
-                        <p>Phone: +49 (30) 555-8294</p>
-                        <p>Berlin, Germany</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <div class="footeropyright">
-                        <p>&copy; 2024 Vectis. All rights reserved.</p>
-                    </div>
-                    <div class="footer-legal">
-                        <a href="privacy.html">Privacy Policy</a>
-                        <a href="terms.html">Terms of Service</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="global-cta-bar" role="region" aria-label="Sticky call to action">
-        <div class="global-cta-content">
-            <span>Ready to accelerate every location?</span>
-            <div class="global-cta-actions">
-                <a href="support.html#contacts" class="btn btn-primary btn-small">Request demo</a>
-                <a href="pricing.html" class="btn btn-outline btn-small">See pricing</a>
-            </div>
-        </div>
-    </div>
+    <div id="footer-placeholder"></div>
 
     <script src="js/main.js"></script>
 </body>
